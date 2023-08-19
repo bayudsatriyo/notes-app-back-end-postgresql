@@ -24,7 +24,7 @@ class NotesService {
     if (!result.rows[0].id) {
       throw new InvariantError('Catatan gagal ditambahkan');
     }
-
+    console.log("data ditambahkan");
     return result.rows[0].id;
   }
 
