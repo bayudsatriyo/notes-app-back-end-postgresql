@@ -14,7 +14,7 @@ class UploadsHandler {
             this._validator.validateImageHeaders(data.hapi.headers);
 
             const filename = await this._service.writeFile(data, data.hapi);
-            
+            console.log(filename);
             const response = h.response({
                 status: 'success',
                 data: {
